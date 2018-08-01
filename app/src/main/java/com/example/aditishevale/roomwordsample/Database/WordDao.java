@@ -1,4 +1,4 @@
-package com.example.aditishevale.roomwordsample;
+package com.example.aditishevale.roomwordsample.Database;
 
 import android.arch.persistence.room.Insert;
 import android.arch.lifecycle.LiveData;

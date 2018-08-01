@@ -1,9 +1,12 @@
-package com.example.aditishevale.roomwordsample;
+package com.example.aditishevale.roomwordsample.ViewModel;
 
 import android.app.Application;
 import android.arch.lifecycle.AndroidViewModel;
 import android.arch.lifecycle.LiveData;
 import android.support.annotation.NonNull;
+
+import com.example.aditishevale.roomwordsample.Database.Word;
+import com.example.aditishevale.roomwordsample.Repository.WordRespository;
 
 import java.util.List;
 

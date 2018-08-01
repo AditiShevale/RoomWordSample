@@ -1,8 +1,12 @@
-package com.example.aditishevale.roomwordsample;
+package com.example.aditishevale.roomwordsample.Repository;
 
 import android.app.Application;
 import android.arch.lifecycle.LiveData;
 import android.os.AsyncTask;
+
+import com.example.aditishevale.roomwordsample.Database.Word;
+import com.example.aditishevale.roomwordsample.Database.WordDao;
+import com.example.aditishevale.roomwordsample.Database.WordRoomDatabase;
 
 import java.util.List;
 
@@ -12,12 +16,12 @@ public class WordRespository {
     private LiveData<List<Word>> mAllWords;
 
 
-    WordRespository(Application application) {
+   public WordRespository(Application application) {
         WordRoomDatabase db = WordRoomDatabase.getDatabase(application);
         mWordDao = db.wordDao();
         mAllWords = mWordDao.getAllWords();
     }
-    LiveData<List<Word>> getAllWords() {
+   public LiveData<List<Word>> getAllWords() {
         return mAllWords;
     }
     public void insert (Word word) {
