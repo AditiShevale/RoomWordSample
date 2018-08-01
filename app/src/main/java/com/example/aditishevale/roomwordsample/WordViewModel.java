@@ -8,6 +8,7 @@ import android.support.annotation.NonNull;
 import java.util.List;
 
 public class WordViewModel extends AndroidViewModel {
+
     private WordRespository mRepository;
     private LiveData<List<Word>> mAllWords;
 
@@ -16,10 +17,12 @@ public class WordViewModel extends AndroidViewModel {
         mRepository = new WordRespository(application);
         mAllWords = mRepository.getAllWords();
     }
+
     LiveData<List<Word>> getAllWords() {
 
         return mAllWords;
     }
+
     public void insert(Word word) {
 
         mRepository.insert(word);
