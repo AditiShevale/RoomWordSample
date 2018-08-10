@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
         final WordListAdapter adapter = new WordListAdapter(this);
         recyclerView.setAdapter(adapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
-//    Heya
+
 
         mWordViewModel = ViewModelProviders.of(this).get(WordViewModel.class);
 
