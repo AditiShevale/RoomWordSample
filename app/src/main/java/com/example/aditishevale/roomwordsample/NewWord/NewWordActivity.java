@@ -10,7 +10,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.example.aditishevale.roomwordsample.Database.Word;
-import com.example.aditishevale.roomwordsample.Database.WordDao_Impl;
+
 import com.example.aditishevale.roomwordsample.R;
 
 public class NewWordActivity extends AppCompatActivity {
@@ -20,6 +20,7 @@ public class NewWordActivity extends AppCompatActivity {
 
     private EditText mEditWordView;
     public static final int NEW_WORD_ACTIVITY_REQUEST_CODE = 1;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
