@@ -9,7 +9,6 @@ import java.util.List;
 
 @Dao
 public interface WordDao {
-
     @Insert
 
     void insert(Word word);
