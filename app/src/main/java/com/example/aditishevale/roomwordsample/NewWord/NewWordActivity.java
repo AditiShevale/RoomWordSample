@@ -14,7 +14,6 @@ import com.example.aditishevale.roomwordsample.Database.Word;
 import com.example.aditishevale.roomwordsample.R;
 
 public class NewWordActivity extends AppCompatActivity {
-
     public static final String EXTRA_REPLY =
             "com.example.android.roomwordssample.REPLY";
 
