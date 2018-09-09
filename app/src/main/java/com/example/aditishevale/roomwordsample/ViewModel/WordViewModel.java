@@ -19,7 +19,9 @@ public class WordViewModel extends AndroidViewModel {
     public WordViewModel(@NonNull Application application) {
 
         super(application);
+
         mRepository = new WordRespository(application);
+
         mAllWords = mRepository.getAllWords();
     }
 
@@ -30,6 +32,7 @@ public class WordViewModel extends AndroidViewModel {
     }
 
     public void insert(Word word) {
+
         mRepository.insert(word);
     }
 }
