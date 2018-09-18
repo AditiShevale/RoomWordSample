@@ -17,6 +17,7 @@ public abstract class WordRoomDatabase extends RoomDatabase {
     private static WordRoomDatabase INSTANCE;
 
     private static RoomDatabase.Callback sRoomDatabaseCallback =
+
             new RoomDatabase.Callback(){
 
                 @Override
