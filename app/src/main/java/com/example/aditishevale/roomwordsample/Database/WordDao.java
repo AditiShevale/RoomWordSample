@@ -8,6 +8,7 @@ import android.arch.persistence.room.Query;
 import java.util.List;
 
 @Dao
+
 public interface WordDao {
 
     @Insert
